@@ -1,0 +1,9 @@
+{% block content%}
+    <section>
+        <div>
+            {% for tea in all_teas %}
+                <p>{{ tea.name }}</p>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock content%}
