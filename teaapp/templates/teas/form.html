@@ -1,0 +1,22 @@
+{% load static %}
+{% block content %}
+    <body>
+        <h1>Add New Tea</h1>
+        <section>
+            <div>
+                <form action="{% url 'teaapp:tea_list' %}" method="POST">
+                    {% csrf_token %}
+                    <fieldset>
+                        <label for="name">Tea Name</label>
+                        <input id="name" type="text" name="name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="flavor">Tea Flavor</label>
+                        <input id="flavor" type="text" name="flavor">
+                    </fieldset>
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+        </section>
+    </body>
+{% endblock content%}

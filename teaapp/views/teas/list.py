@@ -14,7 +14,7 @@ def tea_list(request):
                 id, 
                 name, 
                 flavor   
-            FROM teaapp_tea;
+            FROM teaapp_tea
             """)
 
             all_teas = db_cursor.fetchall()
@@ -26,3 +26,19 @@ def tea_list(request):
         }
 
         return render(request, template, context)
+
+    elif request.method == 'POST':
+        form_data = request.POST
+
+        with sqlite3.connect(Connection.db_path) as conn:
+            db_cursor = conn.cursor()
+
+            db_cursor.execute("""
+            INSERT INTO teaapp_tea
+            ( name, flavor )
+            VALUES
+            ( ?, ? )
+            """,
+            (form_data['name'], form_data['flavor']))
+
+        return redirect(reverse('teaapp:tea_list'))
