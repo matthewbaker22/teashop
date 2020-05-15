@@ -1,0 +1,65 @@
+[
+  {
+    "model": "teaapp.TeaPackaging",
+    "pk": 1,
+    "fields": {
+      "tea_id": 1,
+      "packaging_id": 1,
+      "longevity_in_months": 6
+    }
+  },
+  {
+    "model": "teaapp.TeaPackaging",
+    "pk": 2,
+    "fields": {
+      "tea_id": 1,
+      "packaging_id": 2,
+      "longevity_in_months": 8
+    }
+  },
+  {
+    "model": "teaapp.TeaPackaging",
+    "pk": 3,
+    "fields": {
+      "tea_id": 1,
+      "packaging_id": 3,
+      "longevity_in_months": 15
+    }
+  },
+  {
+    "model": "teaapp.TeaPackaging",
+    "pk": 4,
+    "fields": {
+      "tea_id": 2,
+      "packaging_id": 1,
+      "longevity_in_months": 10
+    }
+  },
+  {
+    "model": "teaapp.TeaPackaging",
+    "pk": 5,
+    "fields": {
+      "tea_id": 2,
+      "packaging_id": 3,
+      "longevity_in_months": 6
+    }
+  },
+  {
+    "model": "teaapp.TeaPackaging",
+    "pk": 6,
+    "fields": {
+      "tea_id": 3,
+      "packaging_id": 3,
+      "longevity_in_months": 12
+    }
+  },
+  {
+    "model": "teaapp.TeaPackaging",
+    "pk": 7,
+    "fields": {
+      "tea_id": 3,
+      "packaging_id": 2,
+      "longevity_in_months": 16
+    }
+  }
+]

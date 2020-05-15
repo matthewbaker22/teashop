@@ -1,0 +1,47 @@
+[
+  {
+    "model": "teaapp.Packaging",
+    "pk": 1,
+    "fields": {
+      "name": "Tea bag",
+      "handmade": true,
+      "production_location": "Sugarland, TX"
+    }
+  },
+  {
+    "model": "teaapp.Packaging",
+    "pk": 2,
+    "fields": {
+      "name": "Loose tea",
+      "handmade": false,
+      "production_location": "Fremont, CA"
+    }
+  },
+  {
+    "model": "teaapp.Packaging",
+    "pk": 3,
+    "fields": {
+      "name": "Compressed tea",
+      "handmade": false,
+      "production_location": "Fremont, CA"
+    }
+  },
+  {
+    "model": "teaapp.Packaging",
+    "pk": 4,
+    "fields": {
+      "name": "Instant tea",
+      "handmade": false,
+      "production_location": "Nashville, TN"
+    }
+  },
+  {
+    "model": "teaapp.Packaging",
+    "pk": 5,
+    "fields": {
+      "name": "Bottled tea",
+      "handmade": true,
+      "production_location": "Austin, TX"
+    }
+  }
+]

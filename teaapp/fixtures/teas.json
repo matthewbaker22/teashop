@@ -1,0 +1,26 @@
+[
+  {
+    "model": "teaapp.Tea",
+    "pk": 1,
+    "fields": {
+      "name": "Fesitval of Colors",
+      "flavor": "Masala Chai"
+    }
+  },
+  {
+    "model": "teaapp.Tea",
+    "pk": 2,
+    "fields": {
+      "name": "The Mountains",
+      "flavor": "Fujian, Oolong"
+    }
+  },
+  {
+    "model": "teaapp.Tea",
+    "pk": 3,
+    "fields": {
+      "name": "Crystal Sugar",
+      "flavor": "Rize, Black"
+    }
+  }
+]
