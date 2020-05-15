@@ -1,0 +1,11 @@
+{% load static %}
+{% block content %}
+    <body>
+        <h1>Details</h1>
+        <div>
+            <p>Name: {{tea.name}}</p>
+            <p>Flavor: {{tea.flavor}}</p>
+            <p>{{tea.production_location}}</p>
+        </div>
+    </body>
+{% endblock content %}
