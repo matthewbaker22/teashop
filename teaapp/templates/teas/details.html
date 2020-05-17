@@ -1,0 +1,21 @@
+{% load static %}
+{% block content %}
+    {% for tea in tea_values %}
+        <p><b>Tea Name: </b>{{tea.name}}</p>
+        <p><b>Tea Flavor: </b>{{tea.flavor}}</p>
+    
+        <ul>
+            {% for method in tea.packaging_methods %}
+                <p>----------------------------------------</p>
+                <p><b>Packaging Name: </b>{{method.name}}</p>
+                <p><b>Longevity: </b>{{method.longevity}} months</p>
+
+                <form action="{% url 'teaapp:tea_details' method.id %}" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" name="actual_method" value="DELETE">
+                    <button>Delete</button>
+                </form>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+{% endblock content %}

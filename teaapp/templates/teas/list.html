@@ -3,8 +3,8 @@
     <section>
         <div>
             {% for tea in all_teas %}
-                <p>{{ tea.name }}</p>
+                <a href="{% url 'teaapp:tea_details' tea.id %}"><p>{{ tea.name }}</p></a>
             {% endfor %}
         </div>
     </section>
-{% endblock content%}
+{% endblock content %}
